@@ -14,7 +14,7 @@
 
                   <div>
                     <ul class="d-flex p-2 justify-content-center animate__animated animate__fadeIn animate__delay-5s" style="list-style: none;">
-                      <li><a href="/about" class="btn btn-outline-danger">Learn more about me here!</a></li>
+                      <li><a href="/about" class="btn pink-btn">Learn more about me here!</a></li>
                     </ul>
                   </div>
                 </div>
@@ -48,6 +48,16 @@ export default {
   color: #492F10;
 }
 
+.pink-btn {
+  border: 1px solid #DF5E5E;
+  color: #DF5E5E;
+}
+
+.pink-btn:hover {
+  background-color: #DF5E5E;
+  color: #FDD2BF;
+}
+
 /* typing animation */
 .typewriter h2 {
     display: flex;
@@ -59,7 +69,7 @@ export default {
     border-right: .15em solid #492F10; /* The typwriter cursor */
     white-space: wrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .05em; /* Adjust as needed */
+    letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3s steps(30, end),
       blink-caret .5s step-end infinite;
