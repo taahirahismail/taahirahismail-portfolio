@@ -1,5 +1,5 @@
 <template>
-    <div v-if="testimonials">
+    <div v-if="testimonials" class="m-2 p-2">
         <testimonials-comp v-for="testimonial of testimonials" :key="testimonial.id" :testimonial="testimonial"/>
     </div>
 
