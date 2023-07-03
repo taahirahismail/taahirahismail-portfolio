@@ -1,6 +1,6 @@
 <template>
-    <div class="col-md-4 p-2">
-            <div class="card container-md pink-bg brown-border">
+    <div class="col-4 p-2">
+            <div class="card pink-bg brown-border">
               <div class="p-5 hide">
                 <img
                   src="https://i.postimg.cc/FKSMcmPK/C12-Taahirah-Ismail-crop.jpg"
