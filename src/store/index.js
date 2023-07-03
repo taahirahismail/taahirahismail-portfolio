@@ -38,7 +38,7 @@ export default createStore({
       .then((project) => context.commit("setProject", project))
     },
     getTestimonials: async (context) => {
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
+      fetch("https://taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
       .then((res) => res.json())
       .then((testimonials) => context.commit("setTestimonials", testimonials))
     }
