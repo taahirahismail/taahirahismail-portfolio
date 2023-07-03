@@ -67,7 +67,7 @@ export default {
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #492F10; /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
+    white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
