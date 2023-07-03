@@ -35,8 +35,8 @@
                   <div class="card m-2 p-3 text-center pink-bg brown-border brown-text">
                     <h4 class="card p-3 light-bg brown-border-thin">Taahirah's Playlist of Passions:</h4>
 
-                    <div v-if="playlist" id="playlist">
-                      <passion-board-comp v-for="song of playlist" :key="song.id" :song="song"/>
+                    <div v-if="playlist" id="playlist" class="d-flex flex-wrap align-items-center justify-content-center">
+                      <passion-board-comp v-for="song of playlist" :key="song.id" :song="song" class="song-card"/>
                     </div>
 
                     <div v-else>Loading...</div>
@@ -80,6 +80,12 @@ export default {
 
 .brown-border-thin {
   border: 2px solid #492F10;
+}
+
+.song-card:hover {
+  transform: translate3D(0,-1px,0) scale(1.03);
+  box-shadow: 8px 28px 50px #492F10, 1px 6px 12px #492F10;
+  transition: all .4s ease;
 }
   
 </style>

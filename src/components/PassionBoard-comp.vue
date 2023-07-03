@@ -1,6 +1,6 @@
 <template>
-    <div class="m-2 p-2 playlist">
-        <img :src="song.img" :alt="song.name">
+    <div class="col-3 m-2 p-2 playlist">
+        <img :src="song.img" :alt="song.name" style="width: 100%;">
     </div>
 </template>
 
