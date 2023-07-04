@@ -28,12 +28,12 @@ export default createStore({
       .then((experience) => context.commit("setExperience", experience))
     },
     getProjects: async (context) => {
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/projects-db.json")
+      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json")
       .then((res) => res.json())
       .then((projects) => context.commit("setProjects", projects))
     },
     getProject: async (context, id) =>{
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/projects-db.json/" + id)
+      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json/" + id)
       .then((res) => res.json())
       .then((project) => context.commit("setProject", project))
     },
