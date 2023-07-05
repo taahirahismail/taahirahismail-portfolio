@@ -127,11 +127,15 @@ export default {
 </script>
 
 <style>
+* {
+  color: #492F10;
+}
+
 /* timeline */
     .timeline {
     position: relative;
     max-width: 6px;
-    margin: 20px;
+    margin-left: 17%;
 }
 
 .timeline::after {
@@ -143,6 +147,7 @@ export default {
     bottom: 0;
     left: 0;
     margin-left: -10px;
+    border-radius: 5px;
 }
 
 .container {
@@ -206,20 +211,15 @@ export default {
     color: #FDD2BF;
 }
 
-/* .html {max-width: 90%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.css {max-width: 84%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.bootstrap {max-width: 80%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.leadership {max-width: 65%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.crit-thinking {max-width: 78%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.people {max-width: 82%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.data-analysis {max-width: 76%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.organization {max-width: 93%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
-.cool-stylish {max-width: 100%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
+.intermediate {max-width: 60%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
+.advanced {max-width: 75%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
+.expert {max-width: 90%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
+.godly {max-width: 100%; background-color: #DF5E5E; padding-right: 5px; border-radius: 10px;}
 
-.html, .css, .bootstrap, .leadership, .crit-thinking, .people, .data-analysis, .organization, .cool-stylish {
+.intermediate, .advanced, .expert, .godly {
     animation-name: fill-bars;
     animation-duration: 2.5s;
-} */
+}
 
 @keyframes fill-bars {
     from{
