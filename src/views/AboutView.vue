@@ -35,7 +35,7 @@
                   <div class="card m-2 p-3 text-center pink-bg brown-border brown-text">
                     <h4 class="card p-3 light-bg brown-border-thin">Taahirah's Playlist of Passions:</h4>
 
-                    <div v-if="playlist" id="playlist" class="d-flex flex-wrap align-items-center justify-content-center">
+                    <div v-if="playlist" id="playlist" class="d-flex align-items-center justify-content-center">
                       <passion-board-comp v-for="song of playlist" :key="song.id" :song="song" class="song-card"/>
                     </div>
 
@@ -87,5 +87,10 @@ export default {
   box-shadow: 8px 28px 50px #492F10, 1px 6px 12px #492F10;
   transition: all .4s ease;
 }
-  
+ 
+ #playlist {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px 30px;
+ }
 </style>
