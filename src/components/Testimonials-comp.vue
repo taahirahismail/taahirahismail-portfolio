@@ -1,15 +1,15 @@
 <template>
-    <div class="row d-flex justify-content-center align-items-center">
-                <div class="card m-1 p-3 col-5 d-flex justify-content-center align-items-center pink-bg brown-border">
+    <div id="testimonials">
+                <div class="card m-1 p-3 col-6 light-bg brown-border">
                   <figure class="test-cards light-bg">
-                    <blockquote class="p-2">
+                    <blockquote class="blockquote">
                         {{ testimonial.quote }}
                       <div class="arrow"></div>
                     </blockquote>
-                    <img :src="testimonial.img" :alt="testimonial.name" loading="lazy" style="width: 100%;"/>
+                    <img :src="testimonial.img" :alt="testimonial.name" loading="lazy" class="img"/>
                     <div class="p-2 author">
-                      <h5>{{ testimonial.name }}<br>
-                        <span>{{ testimonial.relation }}</span>
+                      <h5 class="test-heading">{{ testimonial.name }}<br>
+                        <span class="test-span">{{ testimonial.relation }}</span>
                     </h5>
                     </div>
                   </figure>
@@ -36,32 +36,31 @@ export default {
     border: 3px solid #492F10;
 }
 
-figure .test-cards {
+.brown-border-thin {
+  border: 1px solid #492F10;
+}
+
+#testimonials {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.test-cards {
   position: relative;
   overflow: hidden;
-  margin: 10px;
   min-width: 220px;
   max-width: 500px;
   width: 100%;
   color: #492F10;
   text-align: left;
-  box-shadow: 0 0 5px #492f101e;
-  border-radius: 8px;
 }
 
-figure .test-cards * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
-}
-
-figure .test-cards img {
+.test-cards .img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-figure .test-cards blockquote {
+.test-cards .blockquote {
   position: relative;
   background-color: #FDD2BF;
   padding: 25px 50px 25px 50px;
@@ -73,8 +72,8 @@ figure .test-cards blockquote {
   font-style: italic;
 }
 
-figure .test-cards blockquote:before,
-figure .test-cards blockquote:after {
+.test-cards .blockquote:before,
+.test-cards .blockquote:after {
   content: "\201C";
   position: absolute;
   font-size: 50px;
@@ -82,18 +81,18 @@ figure .test-cards blockquote:after {
   font-style: normal;
 }
 
-figure .test-cards blockquote:before {
+.test-cards .blockquote:before {
   top: 25px;
   left: 20px;
 }
 
-figure .test-cards blockquote:after {
+.test-cards .blockquote:after {
   content: "\201D";
   right: 20px;
   bottom: 0;
 }
 
-figure .test-cards .arrow {
+.test-cards .arrow {
   top: 100%;
   width: 0;
   height: 0;
@@ -104,7 +103,7 @@ figure .test-cards .arrow {
   position: absolute;
 }
 
-figure .test-cards .author {
+.test-cards .author {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -115,13 +114,13 @@ figure .test-cards .author {
   text-transform: uppercase;
 }
 
-figure .test-cards .author h5 {
+.test-cards .author .test-heading {
   opacity: 0.8;
   margin: 0;
   font-weight: 800px;
 }
 
-figure .test-cards .author h5 span {
+.test-cards .author .test-heading .test-span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
