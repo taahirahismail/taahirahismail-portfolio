@@ -12,13 +12,11 @@
           id="projects-card"
           class="card m-2 col-5 dark-pink-bg brown-border"
         >
-              <img
-                :src="project.img"
+             <iframe   :src="project.netlify"
                 :alt="project.title"
                 class="d-block w-100"
-                loading="lazy"
-                style="width: 100%"
-              />
+                
+                style="width: 100%; height: 400px;" frameborder="0"></iframe>
               <h5 class="text-center pt-3 brown-text">{{ project.title }}</h5>
   
             <p class="text-center brown-text">
