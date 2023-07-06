@@ -1,95 +1,106 @@
 <template>
-    <div class="card m-2 p-3 pink-bg brown-border">
-      <h3 class="text-center card m-2 p-2 light-bg brown-border">
-        My Projects (so far!)
-      </h3>
-  
-      <div v-if="projects" class="m-2 p-3 d-flex flex-wrap justify-content-center">
-        <div
-          v-for="project of projects"
-          :key="project.id"
-          :project="project"
-          id="projects-card"
-          class="card m-2 col-5 dark-pink-bg brown-border"
+    <div class="text-center m-2">
+        <DetailsComp/>
+    </div>
+
+  <div class="card m-2 p-3 mint-bg brown-border">
+    <h3 class="text-center card m-2 p-2 light-bg brown-border">
+      My Projects (so far!)
+    </h3>
+
+    <div
+      v-if="projects"
+      class="m-2 p-3 d-flex flex-wrap justify-content-center"
+    >
+      <div
+        v-for="project of projects"
+        :key="project.id"
+        :project="project"
+        id="projects-card"
+        class="card m-2 col-5 dark-mint-bg brown-border"
+      >
+        <iframe
+          :src="project.netlify"
+          :alt="project.title"
+          class="d-block w-100"
+          style="width: 100%; height: 400px"
+          frameborder="0"
+        ></iframe>
+        <h5 class="text-center pt-3 brown-text">{{ project.title }}</h5>
+
+        <p class="text-center brown-text">
+          {{ project.desc }}
+        </p>
+        <ul
+          class="d-flex p-0 gap-2 justify-content-center"
+          style="list-style: none"
         >
-             <iframe   :src="project.netlify"
-                :alt="project.title"
-                class="d-block w-100"
-                
-                style="width: 100%; height: 400px;" frameborder="0"></iframe>
-              <h5 class="text-center pt-3 brown-text">{{ project.title }}</h5>
-  
-            <p class="text-center brown-text">
-              {{ project.desc }}
-            </p>
-            <ul
-              class="d-flex p-0 gap-2 justify-content-center"
-              style="list-style: none"
+          <li>
+            <a :href="project.github" target="_blank" class="btn brown-btn"
+              >Github</a
             >
-              <li>
-                <a :href="project.github" target="_blank" class="btn brown-btn"
-                  >Github</a
-                >
-              </li>
-              <li>
-                <a :href="project.netlify" target="_blank" class="btn brown-btn"
-                  >Netlify</a
-                >
-              </li>
-            </ul>
-        </div>
-      </div>
-  
-      <div v-else>
-        wait for it...
+          </li>
+          <li>
+            <a :href="project.netlify" target="_blank" class="btn brown-btn"
+              >Netlify</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    computed: {
-      projects() {
-        return this.$store.state.projects;
-      },
+
+    <div v-else class="text-center">wait for it...</div>
+  </div>
+</template>
+
+<script>
+import DetailsComp from '@/components/Details-comp.vue';
+
+export default {
+  computed: {
+    projects() {
+      return this.$store.state.projects;
     },
-  
-    mounted() {
-      this.$store.dispatch("getProjects");
-    },
-  };
-  </script>
-  
-  <style>
-  .brown-text {
-    color: #492f10;
-  }
-  
-  .pink-bg {
-      background-color: #E98580;
-  }
-  
-  .dark-pink-bg {
-    background-color: #df5e5e;
-  }
-  
-  .brown-border {
-      border: 3px solid #492F10;
-  }
-  
-  .brown-btn {
-    border: 1px solid #492f10;
-    color: #492f10;
-  }
-  
-  .brown-btn:hover {
-    background-color: #492f10;
-    color: #df5e5e;
-  }
-  
-  #projects-card:hover {
-    transform: translate3D(0, -1px, 0) scale(1.03);
-    box-shadow: 8px 28px 50px #492f10, 1px 6px 12px #492f10;
-    transition: all 0.4s ease;
-  }
-  </style>
+  },
+
+  mounted() {
+    this.$store.dispatch("getProjects");
+  },
+
+  components: {DetailsComp}
+};
+</script>
+
+<style>
+.brown-text {
+  color: #492f10;
+}
+
+.mint-bg {
+  background-color: #A4D0A4;
+}
+
+.yellow-bg {
+  background-color: #F7E1AE;
+}
+
+.brown-border {
+  border: 3px solid #492f10;
+}
+
+.brown-btn {
+  border: 1px solid #492f10;
+  color: #492f10;
+}
+
+.brown-btn:hover {
+  background-color: #492f10;
+  color: #F7E1AE;
+}
+
+#projects-card:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+  box-shadow: 8px 28px 50px #492f10, 1px 6px 12px #492f10;
+  transition: all 0.4s ease;
+}
+</style>

@@ -26,6 +26,6 @@ export default {
   font-family: 'Quicksand', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FDD2BF;
+  background-color: #FFF8D6;
 }
 </style>

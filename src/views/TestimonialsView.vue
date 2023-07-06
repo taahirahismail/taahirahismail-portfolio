@@ -1,16 +1,16 @@
 <template>
-    <div class="m-2">
-      <div v-if="testimonials" class="card p-3 pink-bg brown-border">
-        <h2 class="text-center card p-2 light-bg brown-border">Testimonials</h2>
+  <div class="m-2">
+      <div v-if="testimonials" class="card p-3 dark-blue-bg brown-border">
+        <h2 class="text-center card p-2 light-bg brown-border">What the People Have to Say:</h2>
 
         <div class="row justify-content-center">
             <div
               v-for="testimonial of testimonials"
               :key="testimonial.id"
               :testimonial="testimonial"
-              class="card m-1 p-3 col-5 light-bg brown-border"
+              class="card m-1 p-3 col-5 purple-bg brown-border"
             >
-            <figure class="mx-auto test-cards light-bg">
+            <figure class="mx-auto test-cards purple-bg">
               <blockquote class="blockquote">
                 {{ testimonial.quote }}
                 <div class="arrow"></div>
@@ -36,8 +36,6 @@
         give her a second...
       </div>
     </div>
-
-
 </template>
 
 <script>
@@ -55,12 +53,16 @@ export default {
 </script>
 
 <style>
-.pink-bg {
-  background-color: #e98580;
+.dark-blue-bg {
+  background-color: #A4D0A4;
 }
 
 .light-bg {
-  background-color: #fdd2bf;
+  background-color: #FFF8D6;
+}
+
+.purple-bg {
+  background-color: #F7E1AE;
 }
 
 .brown-border {
@@ -88,7 +90,7 @@ export default {
 
 .test-cards .blockquote {
   position: relative;
-  background-color: #fdd2bf;
+  background-color: #F7E1AE;
   padding: 25px 50px 25px 50px;
   font-size: 1em;
   font-weight: 500;
@@ -124,7 +126,7 @@ export default {
   height: 0;
   border-left: 25px solid transparent;
   border-right: 0px solid transparent;
-  border-top: 25px solid #fdd2bf;
+  border-top: 25px solid #F7E1AE;
   margin: 0;
   position: absolute;
 }
@@ -135,7 +137,7 @@ export default {
   width: 100%;
   padding: 5px 25px;
   color: #492f10;
-  background-color: #fdd2bf;
+  background-color: #F7E1AE;
   margin: 0;
   text-transform: uppercase;
 }

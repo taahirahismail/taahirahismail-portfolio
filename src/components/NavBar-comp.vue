@@ -42,20 +42,20 @@ export default {
 <style scoped>
 
 .router-link-active {
-    color: #E98580 !important;
+    color: #A4D0A4 !important;
 }
 .nav-link:hover {
-    color: #E98580 !important;
+    color: #A4D0A4 !important;
 }
 
 .light-bg {
-    background-color: #FDD2BF
+    background-color: #FFF8D6
 }
 .brown-bg {
     background-color: #492F10;
 }
 
 .light-text {
-    color: #FDD2BF;
+    color: #FFF8D6;
 }    
 </style>

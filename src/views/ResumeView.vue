@@ -1,12 +1,12 @@
 <template>
   <div class="p-2">
-    <div class="card container-x pink-bg brown-border">
-      <div class="row m-2 align-items-md-stretch pink-bg">
+    <div class="card container-x dark-blue-bg brown-border">
+      <div class="row m-2 align-items-md-stretch dark-blue-bg">
         <h3 class="text-center card light-bg brown-border-thin brown-text p-3">
             Resum&eacute; of Taahirah Ismail
           </h3>
 
-        <div class="mt-3 col-md-6 p-3 pink-bg">
+        <div class="mt-3 col-md-6 p-3 dark-blue-bg">
           <h3 class="text-center card light-bg brown-border-thin brown-text p-1">
             Education & Experience
           </h3>
@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <div class="mt-3 col-md-6 p-3 pink-bg">
+        <div class="mt-3 col-md-6 p-3 dark-blue-bg">
           <h3 class="text-center card light-bg brown-border-thin brown-text p-1">
             Coding & Design Skills
           </h3>
@@ -143,8 +143,8 @@ export default {
   color: #492f10;
 }
 
-.pink-bg {
-    background-color: #E98580;
+.dark-blue-bg {
+    background-color: #A4D0A4;
 }
 
 .brown-border {
@@ -202,9 +202,9 @@ export default {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #e98580;
+  border: medium solid #A4D0A4;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #e98580 transparent transparent;
+  border-color: transparent #A4D0A4 transparent transparent;
 }
 
 .right::after {
@@ -213,7 +213,7 @@ export default {
 
 .content {
   padding: 20px 30px;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   position: relative;
   border-radius: 6px;
   border: 1px solid #492f10;
@@ -224,7 +224,7 @@ export default {
 /* skills bars */
 .skills-container {
   width: 100%;
-  background-color: #fdd2bf;
+  background-color: #FFF8D6;
   border-radius: 10px;
 }
 
@@ -232,30 +232,30 @@ export default {
   text-align: right;
   padding-top: 3px;
   padding-bottom: 3px;
-  color: #fdd2bf;
+  color: #492f10;
 }
 
 .intermediate {
   max-width: 60%;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   padding-right: 5px;
   border-radius: 10px;
 }
 .advanced {
   max-width: 75%;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   padding-right: 5px;
   border-radius: 10px;
 }
 .expert {
   max-width: 90%;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   padding-right: 5px;
   border-radius: 10px;
 }
 .godly {
   max-width: 100%;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   padding-right: 5px;
   border-radius: 10px;
 }

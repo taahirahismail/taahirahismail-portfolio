@@ -33,7 +33,7 @@ export default {
 
 <style>
 .light-bg {
-  background-color: #FDD2BF;
+  background-color: #FFF8D6;
 }
 
 .dark-border {
@@ -49,13 +49,13 @@ export default {
 }
 
 .pink-btn {
-  border: 1px solid #DF5E5E;
-  color: #DF5E5E;
+  border: 1px solid #F7E1AE;
+  color: #F7E1AE;
 }
 
 .pink-btn:hover {
-  background-color: #DF5E5E;
-  color: #FDD2BF;
+  background-color: #F7E1AE;
+  color: #FFF8D6;
 }
 
 /* typing animation */

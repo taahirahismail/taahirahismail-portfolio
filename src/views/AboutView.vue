@@ -1,5 +1,5 @@
 <template>
-  <div class="card m-2 p-3 text-center pink-bg brown-border brown-text">
+  <div class="card m-2 p-3 text-center dark-blue-bg brown-border brown-text">
     <h4 class="card p-3 light-bg brown-border-thin">
       Some (self-proclaimed) interesting information about me!
     </h4>
@@ -30,7 +30,7 @@
     </p>
   </div>
 
-  <div v-if="playlist" class="card m-2 p-3 text-center pink-bg brown-border brown-text">
+  <div v-if="playlist" class="card m-2 p-3 text-center dark-blue-bg brown-border brown-text">
     <h4 class="card p-3 light-bg brown-border-thin">
       Taahirah's Playlist of Passions:
     </h4>
@@ -42,7 +42,7 @@
         :song="song"
         class="song-card"
       >
-        <img :src="song.img" :alt="song.name"/>
+        <img :src="song.img" :alt="song.name" class="song-img"/>
       </div>
     </div>
   </div>
@@ -71,12 +71,12 @@ export default {
   color: #492f10;
 }
 
-.pink-bg {
-  background-color: #e98580;
+.dark-blue-bg {
+  background-color: #A4D0A4;
 }
 
 .light-bg {
-  background-color: #fdd2bf;
+  background-color: #FFF8D6;
 }
 
 .brown-border {
@@ -94,12 +94,17 @@ export default {
   padding: 10px;
 }
 
+.song-img {
+  max-height: 500px;
+}
+
 .song-card {
   border: 2px solid #492f10;
   border-radius: 5px;
-  background-color: #df5e5e;
+  background-color: #F7E1AE;
   margin: 5px;
   padding: 5px;
+  max-height: 600px;
 }
 
 .song-card:hover {
