@@ -2,15 +2,15 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    experience: null,
+    experiences: null,
     projects: null,
     project: null,
     testimonials: null,
     playlist: null
   },
   mutations: {
-    setExperience: (state, experience) => {
-      state.experience = experience;
+    setExperiences: (state, experiences) => {
+      state.experiences = experiences;
     },
     setProjects: (state, projects) => {
       state.projects = projects;
@@ -26,10 +26,10 @@ export default createStore({
     }
   },
   actions: {
-    getExperience: async (context) => {
+    getExperiences: async (context) => {
       fetch("https://taahirahismail.github.io/vue-eomp-data/edu-exp-db.json")
       .then((res) => res.json())
-      .then((experience) => context.commit("setExperience", experience))
+      .then((experiences) => context.commit("setExperiences", experiences))
     },
     getProjects: async (context) => {
       fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json")
