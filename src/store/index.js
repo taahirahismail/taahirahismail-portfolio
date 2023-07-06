@@ -5,7 +5,8 @@ export default createStore({
     experience: null,
     projects: null,
     project: null,
-    testimonials: null
+    testimonials: null,
+    playlist: null
   },
   mutations: {
     setExperience: (state, experience) => {
@@ -19,11 +20,14 @@ export default createStore({
     },
     setTestimonials: (state, testimonials) => {
       state.testimonials = testimonials;
+    },
+    setPlaylist: (state, playlist) => {
+      state.playlist = playlist;
     }
   },
   actions: {
     getExperience: async (context) => {
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/edu-exp-db.json")
+      fetch("https://taahirahismail.github.io/vue-eomp-data/edu-exp-db.json")
       .then((res) => res.json())
       .then((experience) => context.commit("setExperience", experience))
     },
@@ -41,6 +45,11 @@ export default createStore({
       fetch("https://taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
       .then((res) => res.json())
       .then((testimonials) => context.commit("setTestimonials", testimonials))
+    },
+    getPlaylist: async (context) => {
+      fetch("https://taahirahismail.github.io/vue-eomp-data/passion-board-db.json")
+      .then((res) => res.json())
+      .then((playlist) => context.commit("setPlaylist", playlist))
     }
   }
 })
