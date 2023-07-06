@@ -1,4 +1,5 @@
 <template>
+  <Slide>
     <div class="col-4 p-2">
             <div class="card pink-bg brown-border">
               <div class="p-5 hide">
@@ -56,16 +57,21 @@
               </div>
             </div>
           </div>
+  </Slide>
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu'
+
 export default {
-    
+   components: {
+    Slide
+   } 
 }
 </script>
 
 <style>
-.pfp {
+/* .pfp {
     width: 30%; 
     border: 3px solid #492F10;
     border-radius: 50%;
@@ -81,6 +87,6 @@ export default {
 
 .brown-text {
     color: #492F10;
-}
+} */
     
 </style>

@@ -6,11 +6,10 @@
 
 <script>
 import NavBarComp from './components/NavBar-comp.vue';
-import DetailsComp from './components/Details-comp.vue'
 import FooterComp from './components/Footer-comp.vue';
 
 export default {
-  components: {NavBarComp, DetailsComp, FooterComp}
+  components: {NavBarComp, FooterComp}
 }
 </script>
 

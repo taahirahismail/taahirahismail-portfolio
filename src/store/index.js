@@ -4,7 +4,6 @@ export default createStore({
   state: {
     experiences: null,
     projects: null,
-    project: null,
     testimonials: null,
     playlist: null
   },
@@ -15,9 +14,6 @@ export default createStore({
     setProjects: (state, projects) => {
       state.projects = projects;
     },
-    setProject: (state, project) => {
-      state.project = project;
-    },
     setTestimonials: (state, testimonials) => {
       state.testimonials = testimonials;
     },
@@ -26,30 +22,63 @@ export default createStore({
     }
   },
   actions: {
-    getExperiences: async (context) => {
-      fetch("https://taahirahismail.github.io/vue-eomp-data/edu-exp-db.json")
-      .then((res) => res.json())
-      .then((experiences) => context.commit("setExperiences", experiences))
+    async getExperiences (context) {
+      try {
+        let res = await fetch("https://taahirahismail.github.io/vue-eomp-data/vue-eomp-data.json");
+        let {experiences} = await res.json();
+        if (experiences) {
+          context.commit("setExperiences", experiences)
+        } else {
+          context.commit("setExperiences", experiences)
+        }
+      }
+      catch(error) {
+        console.error("Here's your problem:", error)
+      }
     },
-    getProjects: async (context) => {
-      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json")
-      .then((res) => res.json())
-      .then((projects) => context.commit("setProjects", projects))
+    async getProjects (context) {
+      try {
+        let res = await fetch("https://taahirahismail.github.io/vue-eomp-data/vue-eomp-data.json");
+        let {projects} = await res.json();
+        if (projects) {
+          context.commit("setProjects", projects)
+        } else {
+          context.commit("setProjects", projects)
+        }
+      }
+      catch(error) {
+        console.error("Here's your problem:", error)
+      }
     },
-    getProject: async (context, id) =>{
-      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json/" + id)
-      .then((res) => res.json())
-      .then((project) => context.commit("setProject", project))
+
+    async getTestimonials (context) {
+      try {
+        let res = await fetch("https://taahirahismail.github.io/vue-eomp-data/vue-eomp-data.json");
+        let {testimonials} = await res.json();
+        if (testimonials) {
+          context.commit("setTestimonials", testimonials)
+        } else {
+          context.commit("setTestimonials", testimonials)
+        }
+      }
+      catch(error) {
+        console.error("Here's your problem:", error)
+      }
     },
-    getTestimonials: async (context) => {
-      fetch("https://taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
-      .then((res) => res.json())
-      .then((testimonials) => context.commit("setTestimonials", testimonials))
+
+    async getPlaylist (context) {
+      try {
+        let res = await fetch("https://taahirahismail.github.io/vue-eomp-data/vue-eomp-data.json");
+        let {playlist} = await res.json();
+        if (playlist) {
+          context.commit("setPlaylist", playlist)
+        } else {
+          context.commit("setPlaylist", playlist)
+        }
+      }
+      catch(error) {
+        console.error("Here's your problem:", error)
+      }
     },
-    getPlaylist: async (context) => {
-      fetch("https://taahirahismail.github.io/vue-eomp-data/passion-board-db.json")
-      .then((res) => res.json())
-      .then((playlist) => context.commit("setPlaylist", playlist))
-    }
   }
 })

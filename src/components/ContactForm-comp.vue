@@ -6,7 +6,7 @@
                 method="POST"
                 class="card p-5 pink-bg"
               >
-                <h2 class="card p-3 heading-text pink-bg brown-border-thin text-center">
+                <h2 class="card p-3 heading-text light-bg brown-border-thin text-center">
                   Contact Me!
                 </h2>
                 <div class="mb-3">
