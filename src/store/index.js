@@ -5,7 +5,8 @@ export default createStore({
     experiences: null,
     projects: null,
     project: null,
-    testimonials: null
+    testimonials: null,
+    playlist: null
   },
   mutations: {
     setExperiences: (state, experiences) => {
@@ -19,6 +20,9 @@ export default createStore({
     },
     setTestimonials: (state, testimonials) => {
       state.testimonials = testimonials;
+    },
+    setPlaylist: (state, playlist) => {
+      state.playlist = playlist;
     }
   },
   actions: {
@@ -28,19 +32,24 @@ export default createStore({
       .then((experiences) => context.commit("setExperiences", experiences))
     },
     getProjects: async (context) => {
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/projects-db.json")
+      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json")
       .then((res) => res.json())
       .then((projects) => context.commit("setProjects", projects))
     },
     getProject: async (context, id) =>{
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/projects-db.json/" + id)
+      fetch("https://taahirahismail.github.io/vue-eomp-data/projects-db.json/" + id)
       .then((res) => res.json())
       .then((project) => context.commit("setProject", project))
     },
     getTestimonials: async (context) => {
-      fetch("https//:taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
+      fetch("https://taahirahismail.github.io/vue-eomp-data/testimonials-db.json")
       .then((res) => res.json())
       .then((testimonials) => context.commit("setTestimonials", testimonials))
+    },
+    getPlaylist: async (context) => {
+      fetch("https://taahirahismail.github.io/vue-eomp-data/passion-board-db.json")
+      .then((res) => res.json())
+      .then((playlist) => context.commit("setPlaylist", playlist))
     }
   }
 })
