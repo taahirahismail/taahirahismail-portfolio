@@ -1,13 +1,17 @@
 <template>
+  <div class="text-center m-2">
+        <DetailsComp/>
+    </div>
+
   <div class="p-2">
-    <div class="card container-x dark-blue-bg brown-border">
-      <div class="row m-2 align-items-md-stretch dark-blue-bg">
-        <h3 class="text-center card light-bg brown-border-thin brown-text p-3">
+    <div class="card container-x purple-bg brown-border">
+      <div class="row m-2 align-items-md-stretch purple-bg">
+        <h3 class="text-center card light-purple-bg brown-border-thin brown-text p-3">
             Resum&eacute; of Taahirah Ismail
           </h3>
 
-        <div class="mt-3 col-md-6 p-3 dark-blue-bg">
-          <h3 class="text-center card light-bg brown-border-thin brown-text p-1">
+        <div class="mt-3 col-md-6 p-3 purple-bg">
+          <h3 class="text-center card light-purple-bg brown-border-thin brown-text p-1">
             Education & Experience
           </h3>
 
@@ -36,8 +40,8 @@
           </div>
         </div>
 
-        <div class="mt-3 col-md-6 p-3 dark-blue-bg">
-          <h3 class="text-center card light-bg brown-border-thin brown-text p-1">
+        <div class="mt-3 col-md-6 p-3 purple-bg">
+          <h3 class="text-center card light-purple-bg brown-border-thin brown-text p-1">
             Coding & Design Skills
           </h3>
           <div class="skills-fix">
@@ -75,7 +79,7 @@
             </div>
           </div>
 
-          <h3 class="text-center card light-bg brown-border-thin p-1 mt-5">
+          <h3 class="text-center card light-purple-bg brown-border-thin p-1 mt-5">
             Soft Skills
           </h3>
           <div class="skills-fix">
@@ -125,6 +129,8 @@
 </template>
 
 <script>
+import DetailsComp from '@/components/Details-comp.vue'
+
 export default {
   computed: {
     experiences() {
@@ -135,6 +141,8 @@ export default {
   mounted() {
     this.$store.dispatch("getExperiences");
   },
+
+  components: {DetailsComp}
 };
 </script>
 
@@ -143,8 +151,8 @@ export default {
   color: #492f10;
 }
 
-.dark-blue-bg {
-    background-color: #A4D0A4;
+.dark-purple-bg {
+    background-color: #926E6F;
 }
 
 .brown-border {
@@ -202,9 +210,9 @@ export default {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #A4D0A4;
+  border: medium solid #CA8A8B;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #A4D0A4 transparent transparent;
+  border-color: transparent #CA8A8B transparent transparent;
 }
 
 .right::after {
@@ -213,7 +221,7 @@ export default {
 
 .content {
   padding: 20px 30px;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   position: relative;
   border-radius: 6px;
   border: 1px solid #492f10;
@@ -224,7 +232,7 @@ export default {
 /* skills bars */
 .skills-container {
   width: 100%;
-  background-color: #FFF8D6;
+  background-color: #E6C4C0;
   border-radius: 10px;
 }
 
@@ -232,30 +240,30 @@ export default {
   text-align: right;
   padding-top: 3px;
   padding-bottom: 3px;
-  color: #492f10;
+  color: #E6C4C0;
 }
 
 .intermediate {
   max-width: 60%;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   padding-right: 5px;
   border-radius: 10px;
 }
 .advanced {
   max-width: 75%;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   padding-right: 5px;
   border-radius: 10px;
 }
 .expert {
   max-width: 90%;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   padding-right: 5px;
   border-radius: 10px;
 }
 .godly {
   max-width: 100%;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   padding-right: 5px;
   border-radius: 10px;
 }

@@ -3,8 +3,8 @@
         <DetailsComp/>
     </div>
 
-  <div class="card m-2 p-3 mint-bg brown-border">
-    <h3 class="text-center card m-2 p-2 light-bg brown-border">
+  <div class="card m-2 p-3 purple-bg brown-border">
+    <h3 class="text-center card m-2 p-2 light-purple-bg brown-border">
       My Projects (so far!)
     </h3>
 
@@ -17,7 +17,7 @@
         :key="project.id"
         :project="project"
         id="projects-card"
-        class="card m-2 col-5 dark-mint-bg brown-border"
+        class="card m-2 col-5 dark-purple-bg brown-border"
       >
         <iframe
           :src="project.netlify"
@@ -76,12 +76,16 @@ export default {
   color: #492f10;
 }
 
-.mint-bg {
-  background-color: #A4D0A4;
+.light-purple-bg {
+  background-color: #E6C4C0;
 }
 
-.yellow-bg {
-  background-color: #F7E1AE;
+.dark-purple-bg {
+  background-color: #926E6F;
+}
+
+.purple-bg {
+  background-color: #CA8A8B;
 }
 
 .brown-border {
@@ -95,7 +99,7 @@ export default {
 
 .brown-btn:hover {
   background-color: #492f10;
-  color: #F7E1AE;
+  color: #CA8A8B;
 }
 
 #projects-card:hover {

@@ -1,8 +1,8 @@
 <template>
   <div id="main" class="row align-items-md-stretch m-2">
-          <div class="card container-fluid p-5 light-bg dark-border">
+          <div class="card container-fluid p-5 dark-purple-bg brown-border">
             <div class="container-md p-2 text-center d-flex justify-content-center align-items-center">
-              <div class="card w-100 p-5 light-bg dark-border-thin">
+              <div class="card w-100 p-5 purple-bg brown-border-thin">
                 <div class="p-5">
                   <div class="typewriter">
                     <h2>Hi there! I'm Taahirah and this is my portfolio!</h2>                  
@@ -14,7 +14,7 @@
 
                   <div>
                     <ul class="d-flex p-2 justify-content-center animate__animated animate__fadeIn animate__delay-5s" style="list-style: none;">
-                      <li><a href="/about" class="btn pink-btn">Learn more about me here!</a></li>
+                      <li><a href="/about" class="btn brown-btn">Learn more about me here!</a></li>
                     </ul>
                   </div>
                 </div>
@@ -32,15 +32,23 @@ export default {
 </script>
 
 <style>
-.light-bg {
-  background-color: #FFF8D6;
+.dark-purple-bg {
+  background-color: #926E6F;
 }
 
-.dark-border {
+.light-purple-bg {
+  background-color: #E6C4C0;
+}
+
+.purple-bg {
+  background-color: #CA8A8B;
+}
+
+.brown-border {
   border: 3px solid #492F10;
 }
 
-.dark-border-thin {
+.brown-border-thin {
   border: 2px solid #492F10;
 }
 
@@ -48,14 +56,14 @@ export default {
   color: #492F10;
 }
 
-.pink-btn {
-  border: 1px solid #F7E1AE;
-  color: #F7E1AE;
+.brown-btn {
+  border: 1px solid #492F10;
+  color: #492F10;
 }
 
-.pink-btn:hover {
-  background-color: #F7E1AE;
-  color: #FFF8D6;
+.brown-btn:hover {
+  background-color: #492F10;
+  color: #CA8A8B;
 }
 
 /* typing animation */

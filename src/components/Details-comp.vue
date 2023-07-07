@@ -3,10 +3,10 @@
 
 <div class="offcanvas offcanvas-start purple-bg brown-text" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="details-offcanvas">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title card m-2 p-2 w-100 text-center light-bg brown-border" id="details-offcanvas">My Details</h5>
+    <h5 class="offcanvas-title card m-2 p-2 w-100 text-center light-purple-bg brown-border" id="details-offcanvas">My Details</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body card m-1 light-bg brown-border">
+  <div class="offcanvas-body card m-1 light-purple-bg brown-border">
     <div class="p-5">
               <img
                 src="https://i.postimg.cc/FKSMcmPK/C12-Taahirah-Ismail-crop.jpg"
@@ -91,11 +91,11 @@ export default {
 }
 
 .purple-bg {
-  background-color: #F7E1AE;
+  background-color: #CA8A8B;
 }
 
-.dark-blue-bg {
-    background-color: #A4D0A4;
+.dark-purple-bg {
+    background-color: #926E6F;
 }
 
 .brown-text {

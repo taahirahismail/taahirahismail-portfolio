@@ -1,10 +1,14 @@
 <template>
+  <div class="text-center m-2">
+        <DetailsComp/>
+    </div>
+
   <div class="d-flex">
     <contact-form-comp />
 
     <div class="p-3 hide">
-      <div class="card p-3 dark-blue-bg brown-border">
-        <h3 class="card p-3 text-center light-bg brown-border">
+      <div class="card p-3 dark-purple-bg brown-border">
+        <h3 class="card p-3 text-center light-purple-bg brown-border">
           What other people contact me for:
         </h3>
 
@@ -50,15 +54,16 @@
 
 <script>
 import ContactFormComp from "@/components/ContactForm-comp.vue";
+import DetailsComp from "@/components/Details-comp.vue"
 
 export default {
-  components: { ContactFormComp },
+  components: { ContactFormComp, DetailsComp },
 };
 </script>
 
 <style>
 .purple-bg {
-  background-color: #F7E1AE;
+  background-color: #CA8A8B;
 }
 
 .brown-border-thin {

@@ -4,10 +4,10 @@
       <form
         action="https://formspree.io/f/xleyrkln"
         method="POST"
-        class="card p-3 dark-blue-bg"
+        class="card p-3 dark-purple-bg"
       >
         <h2
-          class="card p-3 heading-text light-bg brown-border-thin text-center"
+          class="card p-3 heading-text light-purple-bg brown-border-thin text-center"
         >
           Contact Me!
         </h2>
@@ -17,7 +17,7 @@
             v-model="text"
             id="full-name"
             name="Full Name"
-            class="form-control light-bg"
+            class="form-control light-purple-bg"
             placeholder="Your Full Name"
             required
           />
@@ -29,7 +29,7 @@
             v-model="email"
             id="email"
             name="Email"
-            class="form-control light-bg"
+            class="form-control light-purple-bg"
             placeholder="Your Email Address"
             required
           />
@@ -43,7 +43,7 @@
             v-model="tel"
             id="tel"
             name="Contact Number"
-            class="form-control light-bg"
+            class="form-control light-purple-bg"
             placeholder="Your Mobile Number"
             required
           />
@@ -55,7 +55,7 @@
             v-model="message"
             id="message"
             name="Message"
-            class="form-control light-bg"
+            class="form-control light-purple-bg"
             rows="10"
             placeholder="Leave me a message!"
           ></textarea>
@@ -88,8 +88,8 @@ form p {
   color: #492f10;
 }
 
-.dark-blue-bg {
-  background-color: #A4D0A4;
+.dark-purple-bg {
+  background-color: #926E6F;
 }
 
 .brown-border {
@@ -102,8 +102,8 @@ form p {
   color: #492f10;
 }
 
-.light-bg {
-  background-color: #FFF8D6;
+.light-purple-bg {
+  background-color: #CA8A8B;
   border: 1px solid #492f10;
 }
 
@@ -114,6 +114,6 @@ form p {
 
 .brown-btn:hover {
   background-color: #492f10;
-  color: #A4D0A4;
+  color: #926E6F;
 }
 </style>

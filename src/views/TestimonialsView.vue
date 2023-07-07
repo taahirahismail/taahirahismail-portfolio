@@ -1,16 +1,20 @@
 <template>
+  <div class="text-center m-2">
+        <DetailsComp/>
+    </div>
+
   <div class="m-2">
-      <div v-if="testimonials" class="card p-3 dark-blue-bg brown-border">
-        <h2 class="text-center card p-2 light-bg brown-border">What the People Have to Say:</h2>
+      <div v-if="testimonials" class="card p-3 purple-bg brown-border">
+        <h2 class="text-center card p-2 light-purple-bg brown-border">What the People Have to Say:</h2>
 
         <div class="row justify-content-center">
             <div
               v-for="testimonial of testimonials"
               :key="testimonial.id"
               :testimonial="testimonial"
-              class="card m-1 p-3 col-5 purple-bg brown-border"
+              class="card m-1 p-3 col-5 dark-purple-bg brown-border"
             >
-            <figure class="mx-auto test-cards purple-bg">
+            <figure class="mx-auto test-cards dark-purple-bg">
               <blockquote class="blockquote">
                 {{ testimonial.quote }}
                 <div class="arrow"></div>
@@ -39,6 +43,8 @@
 </template>
 
 <script>
+import DetailsComp from '@/components/Details-comp.vue'
+
 export default {
   computed: {
     testimonials() {
@@ -49,20 +55,22 @@ export default {
   mounted() {
     this.$store.dispatch("getTestimonials");
   },
+
+  components: {DetailsComp}
 };
 </script>
 
 <style>
-.dark-blue-bg {
-  background-color: #A4D0A4;
+.dark-purple-bg {
+  background-color: #926E6F;
 }
 
-.light-bg {
-  background-color: #FFF8D6;
+.light-purple-bg {
+  background-color: #E6C4C0;
 }
 
 .purple-bg {
-  background-color: #F7E1AE;
+  background-color: #CA8A8B;
 }
 
 .brown-border {
@@ -90,7 +98,7 @@ export default {
 
 .test-cards .blockquote {
   position: relative;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   padding: 25px 50px 25px 50px;
   font-size: 1em;
   font-weight: 500;
@@ -126,7 +134,7 @@ export default {
   height: 0;
   border-left: 25px solid transparent;
   border-right: 0px solid transparent;
-  border-top: 25px solid #F7E1AE;
+  border-top: 25px solid #926E6F;
   margin: 0;
   position: absolute;
 }
@@ -137,7 +145,7 @@ export default {
   width: 100%;
   padding: 5px 25px;
   color: #492f10;
-  background-color: #F7E1AE;
+  background-color: #926E6F;
   margin: 0;
   text-transform: uppercase;
 }

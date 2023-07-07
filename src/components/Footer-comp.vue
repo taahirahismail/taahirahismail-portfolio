@@ -19,7 +19,7 @@ export default {
 }
 
 .light-text {
-    color: #FFF8D6;
+    color: #CA8A8B;
 }
     
 </style>

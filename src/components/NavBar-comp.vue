@@ -4,7 +4,7 @@
     <a class="navbar-brand px-3" href="#">
         <img src="https://i.postimg.cc/GtVn5Fvb/another-logo.jpg" alt="taahirah-logo" style="width: 17%; border-radius: 50%;">
     </a>
-    <button class="navbar-toggler light-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler light-purple-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,20 +42,20 @@ export default {
 <style scoped>
 
 .router-link-active {
-    color: #A4D0A4 !important;
+    color: #E6C4C0 !important;
 }
 .nav-link:hover {
-    color: #A4D0A4 !important;
+    color: #CA8A8B !important;
 }
 
-.light-bg {
-    background-color: #FFF8D6
+.light-purple-bg {
+    background-color: #E6C4C0
 }
 .brown-bg {
     background-color: #492F10;
 }
 
 .light-text {
-    color: #FFF8D6;
+    color: #E6C4C0;
 }    
 </style>
