@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 col-7">
+  <div class="p-3">
     <div class="card brown-border">
       <form
         action="https://formspree.io/f/xleyrkln"

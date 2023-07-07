@@ -4,7 +4,7 @@
     </div>
 
   <div class="card m-2 p-3 purple-bg brown-border">
-    <h3 class="text-center card m-2 p-2 light-purple-bg brown-border">
+    <h3 class="text-center card m-2 p-3 light-purple-bg brown-border">
       My Projects (so far!)
     </h3>
 

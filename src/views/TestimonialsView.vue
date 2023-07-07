@@ -3,55 +3,66 @@
     <DetailsComp />
   </div>
 
-  <div class="row m-2 p-3 justify-content-around purple-bg brown-border">
-    <div class="col-5">
-                  <div class="card p-3 dark-purple-bg brown-border">
-                    <h4 class="card p-3 text-center light-purple-bg brown-border">Heard in the Classroom:</h4>
-                    <p class="text-sm-start p-2">
-                      "Why don't you put some quotes from people in your life to cover this (previously) empty space." <br>
-                      <cite>-Lyle Brown, 2023</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "You can't force me to be funny. I'm randomly funny, not forcefully funny" <br>
-                      <cite>-Cheslyn Herman, 2023</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "Pew... ppp... pah.. pp..." <br>
-                      <cite>-Caryn Lodewyk, 2023</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "Uh, Caryn's being weird again." <br>
-                      <cite>-Lyle Brown, 2023</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "Yes." <br>
-                      <cite>-Timothy (T-money) Barry, 2023 (when asked for motivation)</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "Take care of yourself. How about that?" <br>
-                      <cite>-Connor Winkworth, 2023 (when asked for motivation)</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "For what?" <br>
-                      <cite>-Jadee Paulse, 2023 (when asked for inspiration)</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "Uhh... um... uhh... uh, idk work hard, you can do it!" <br>
-                      <cite>-Caryn Lodewyk, 2023</cite>
-                    </p>
-                    <p class="text-sm-start p-2">
-                      "I'm helping them because Oslin's not here today. They must pay me." <br>
-                      <cite>-Ethan Lesar, 2023</cite>
-                    </p>
-                  </div>  
-                </div>
+  <div class="card m-2 p-3 purple-bg brown-border fix-display">
+    <div class="w-40">
+      <div class="card p-3 dark-purple-bg brown-border light-text">
+        <h5 class="card p-3 text-center light-purple-bg brown-border brown-text">
+          What the People Have to Say (in General):
+        </h5>
+        <p class="text-sm-start p-2">
+          "Add more quotes." <br />
+          <cite class="brown-text">-Lyle Brown, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "You can't force me to be funny. I'm randomly funny, not forcefully
+          funny" <br />
+          <cite class="brown-text">-Cheslyn Herman, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "I feel like throwing a tantrum." <br />
+          <cite class="brown-text">-Ethan Lesar, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "Pew... ppp... pah.. pp..." <br />
+          <cite class="brown-text">-Caryn Lodewyk, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "Uh, Caryn's being weird again." <br />
+          <cite class="brown-text">-Lyle Brown, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "I'm gonna start working now." <br />
+          <cite class="brown-text"
+            >-Timothy (T-money) Barry, 2023 (legend says he still has yet to
+            start)</cite
+          >
+        </p>
+        <p class="text-sm-start p-2">
+          "I appreciate your appreciation of my appreciation." <br />
+          <cite class="brown-text">-Luke Evertson, 2023</cite>
+        </p>
+        <p class="text-sm-start p-2">
+          "I'm just not going to say anything anymore" <br />
+          <cite class="brown-text"
+            >-Jadee Paulse, 2023 (she continued speaking shortly after)</cite
+          >
+        </p>
+        <p class="text-sm-start p-2">
+          "I'm helping them because Oslin's not here today. They must pay me."
+          <br />
+          <cite class="brown-text">-Ethan Lesar, 2023</cite>
+        </p>
+      </div>
+    </div>
 
     <div
       id="carouselExampleAutoplaying"
-      class="carousel slide card col-6 dark-purple-bg brown-border"
+      class="carousel slide card w-60 dark-purple-bg brown-border"
       data-bs-ride="carousel"
     >
-    <h3 class="text-center card m-2 p-2 light-purple-bg brown-border">What the People Have to Say About Taahirah:</h3>
+      <h3 class="text-center card m-2 p-2 light-purple-bg brown-border brown-text">
+        What the People Have to Say About Taahirah:
+      </h3>
       <div class="carousel-inner">
         <div
           v-for="testimonial in testimonials"
@@ -62,7 +73,7 @@
             class="carousel-item"
             :class="{ active: testimonials.indexOf(testimonial) === 0 }"
           >
-            <div class="row justify-content-center">
+            <div class="justify-content-center">
               <figure class="mx-auto test-cards dark-purple-bg">
                 <blockquote class="blockquote">
                   {{ testimonial.quote }}
@@ -126,6 +137,19 @@ export default {
 </script>
 
 <style>
+.fix-display {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: space-around !important;
+}
+.w-40 {
+  width: 35%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
 .dark-purple-bg {
   background-color: #926e6f;
 }
@@ -136,6 +160,10 @@ export default {
 
 .purple-bg {
   background-color: #ca8a8b;
+}
+
+.light-text {
+  color: #e6c4c0;
 }
 
 .brown-border {
@@ -228,18 +256,18 @@ export default {
 }
 
 @media screen and (max-width: 750px) {
-  .row {
+  .fix-display {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     justify-content: center !important;
   }
 
-  .col-5 {
+  .w-40 {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  .col-6 {
+  .w-60 {
     width: 100%;
   }
 }

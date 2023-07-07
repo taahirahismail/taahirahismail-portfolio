@@ -10,8 +10,8 @@
             Resum&eacute; of Taahirah Ismail
           </h3>
 
-          <div class="row m-2 p-3">
-            <div class="mt-3 col-md-6 p-3 purple-bg">
+          <div class="d-flex m-2 p-3">
+            <div class="w-50 p-3 purple-bg">
               <h3 class="text-center card light-purple-bg brown-border-thin brown-text p-1">
                 Education & Experience
               </h3>
@@ -41,7 +41,7 @@
               </div>
             </div>
     
-            <div class="mt-3 col-md-6 p-3 purple-bg">
+            <div class="w-50 p-3 purple-bg">
               <h3 class="text-center card light-purple-bg brown-border-thin brown-text p-1">
                 Coding & Design Skills
               </h3>
@@ -169,13 +169,13 @@ export default {
 .timeline {
   position: relative;
   max-width: 6px;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 .timeline::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 6px;
   background-color: #492f10;
   top: 0;
   bottom: 0;
@@ -293,5 +293,56 @@ export default {
 }
 /* end of skills bars */
 
+@media screen and (max-width: 1130px) {
+  .container {
+    width: 350px;
+  }
+}
 
+@media screen and (max-width: 820px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 300px;
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+  .skills {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 200px;
+  }
+}
 </style>

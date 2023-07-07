@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-content-center w-100 fix-display">
-    <div class="col-4 p-3 fix-display-2">
+  <div class="d-flex justify-content-center w-100 fix-display">
+    <div class="p-3 w-40 fix-display-2">
               <div class="card container-md dark-purple-bg brown-border">
                 <div class="p-5 hide">
                   <img
@@ -58,7 +58,7 @@
               </div>
             </div>
   
-            <contact-form-comp class="fix-display-2"/>
+            <contact-form-comp class="w-60 fix-display-2"/>
   </div>
 </template>
 
@@ -71,6 +71,14 @@ export default {
 </script>
 
 <style>
+.w-40 {
+  width: 30%;
+}
+
+.w-60 {
+  width: 70%;
+}
+
 .pfp {
     width: 100%; 
     border: 3px solid #492F10;
@@ -97,14 +105,13 @@ export default {
 @media screen and (max-width: 900px) {
   .fix-display {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     align-items: center !important;
     justify-content: center !important;
   }
 
   .fix-display-2 {
     width: 100%;
-    margin: auto;
   }
 
   .pfp {

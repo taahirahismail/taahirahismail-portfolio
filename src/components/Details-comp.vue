@@ -17,8 +17,8 @@
             </div>
 
             <div class="text-center pb-3 brown-text">
-              <h3><strong>Taahirah Ismail</strong></h3>
-              <h4>
+              <h3 class="fix-text"><strong>Taahirah Ismail</strong></h3>
+              <h4 class="fix-text">
                 <em>Web Developer</em> <br />
                 <br />
                 09/04/1999 <br />
@@ -72,7 +72,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .widen {
   width: 35% !important;
 }
@@ -116,5 +116,31 @@ export default {
 .brown-details-btn:hover {
   background-color: #492F10;
   color: #e6c4c0;
+}
+
+@media screen and (max-width: 900px) {
+  .fix-text {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .fix-text {
+    font-size: 15px !important;
+  }
+
+  .p-5, .offcanvas-header, .offcanvas-body {
+    padding: 10px !important;
+  }
+
+  .icons {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .widen {
+    width: 50% !important;
+  }
 }
 </style>
