@@ -1,7 +1,7 @@
 <template>
-    <div class="text-center m-2">
-        <DetailsComp/>
-    </div>
+  <div class="text-center m-2">
+    <DetailsComp />
+  </div>
 
   <div class="card m-2 p-3 purple-bg brown-border">
     <h3 class="text-center card m-2 p-3 light-purple-bg brown-border">
@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import DetailsComp from '@/components/Details-comp.vue';
+import DetailsComp from "@/components/Details-comp.vue";
 
 export default {
   computed: {
@@ -67,7 +67,7 @@ export default {
     this.$store.dispatch("getProjects");
   },
 
-  components: {DetailsComp}
+  components: { DetailsComp },
 };
 </script>
 
@@ -77,15 +77,15 @@ export default {
 }
 
 .light-purple-bg {
-  background-color: #E6C4C0;
+  background-color: #e6c4c0;
 }
 
 .dark-purple-bg {
-  background-color: #926E6F;
+  background-color: #926e6f;
 }
 
 .purple-bg {
-  background-color: #CA8A8B;
+  background-color: #ca8a8b;
 }
 
 .brown-border {
@@ -99,7 +99,7 @@ export default {
 
 .brown-btn:hover {
   background-color: #492f10;
-  color: #CA8A8B;
+  color: #ca8a8b;
 }
 
 #projects-card:hover {

@@ -6,7 +6,9 @@
   <div class="card m-2 p-3 purple-bg brown-border fix-display">
     <div class="w-40">
       <div class="card p-3 dark-purple-bg brown-border light-text">
-        <h5 class="card p-3 text-center light-purple-bg brown-border brown-text">
+        <h5
+          class="card p-3 text-center light-purple-bg brown-border brown-text"
+        >
           What the People Have to Say (in General):
         </h5>
         <p class="text-sm-start p-2">
@@ -60,7 +62,9 @@
       class="carousel slide card w-60 dark-purple-bg brown-border"
       data-bs-ride="carousel"
     >
-      <h3 class="text-center card m-2 p-2 light-purple-bg brown-border brown-text">
+      <h3
+        class="text-center card m-2 p-2 light-purple-bg brown-border brown-text"
+      >
         What the People Have to Say About Taahirah:
       </h3>
       <div class="carousel-inner">

@@ -89,7 +89,7 @@ form p {
 }
 
 .dark-purple-bg {
-  background-color: #926E6F;
+  background-color: #926e6f;
 }
 
 .brown-border {
@@ -118,6 +118,6 @@ form p {
 
 .brown-btn:hover {
   background-color: #492f10;
-  color: #926E6F;
+  color: #926e6f;
 }
 </style>

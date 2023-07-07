@@ -79,7 +79,7 @@ export default {};
 }
 
 .logo {
-    width: 100px;
-    border-radius: 50%;
+  width: 100px;
+  border-radius: 50%;
 }
 </style>

@@ -1,20 +1,20 @@
 <template>
-  <nav-bar-comp/>
-  <router-view/>
-  <footer-comp/>
+  <nav-bar-comp />
+  <router-view />
+  <footer-comp />
 </template>
 
 <script>
-import NavBarComp from './components/NavBar-comp.vue';
-import FooterComp from './components/Footer-comp.vue';
+import NavBarComp from "./components/NavBar-comp.vue";
+import FooterComp from "./components/Footer-comp.vue";
 
 export default {
-  components: {NavBarComp, FooterComp}
-}
+  components: { NavBarComp, FooterComp },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 * {
   box-sizing: border-box;
@@ -23,9 +23,9 @@ export default {
 }
 
 #app {
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: "Quicksand", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E6C4C0;
+  background-color: #e6c4c0;
 }
 </style>

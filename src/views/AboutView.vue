@@ -1,7 +1,7 @@
 <template>
   <div class="text-center m-2">
-        <DetailsComp/>
-    </div>
+    <DetailsComp />
+  </div>
 
   <div class="card m-2 p-3 text-center purple-bg brown-border brown-text">
     <h4 class="card p-3 light-purple-bg brown-border-thin">
@@ -34,7 +34,10 @@
     </p>
   </div>
 
-  <div v-if="playlist" class="card m-2 p-3 text-center purple-bg brown-border brown-text">
+  <div
+    v-if="playlist"
+    class="card m-2 p-3 text-center purple-bg brown-border brown-text"
+  >
     <h4 class="card p-3 light-purple-bg brown-border-thin">
       Taahirah's Playlist of Passions:
     </h4>
@@ -46,18 +49,16 @@
         :song="song"
         class="song-card"
       >
-        <img :src="song.img" :alt="song.name" class="song-img"/>
+        <img :src="song.img" :alt="song.name" class="song-img" />
       </div>
     </div>
   </div>
 
-  <div v-else>
-    still coming...
-  </div>
+  <div v-else>still coming...</div>
 </template>
 
 <script>
-import DetailsComp from '@/components/Details-comp.vue'
+import DetailsComp from "@/components/Details-comp.vue";
 
 export default {
   computed: {
@@ -70,7 +71,7 @@ export default {
     this.$store.dispatch("getPlaylist");
   },
 
-  components: {DetailsComp}
+  components: { DetailsComp },
 };
 </script>
 
@@ -80,11 +81,11 @@ export default {
 }
 
 .dark-purple-bg {
-  background-color: #926E6F;
+  background-color: #926e6f;
 }
 
 .light-purple-bg {
-  background-color: #E6C4C0;
+  background-color: #e6c4c0;
 }
 
 .brown-border {
@@ -109,7 +110,7 @@ export default {
 .song-card {
   border: 2px solid #492f10;
   border-radius: 5px;
-  background-color: #926E6F;
+  background-color: #926e6f;
   margin: 5px;
   padding: 5px;
   max-height: 600px;
