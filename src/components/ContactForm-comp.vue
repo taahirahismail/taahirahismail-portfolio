@@ -1,13 +1,13 @@
 <template>
-  <div class="p-3 w-50">
+  <div class="p-3 col-7">
     <div class="card brown-border">
       <form
         action="https://formspree.io/f/xleyrkln"
         method="POST"
-        class="card p-3 dark-purple-bg"
+        class="card p-3 purple-bg"
       >
         <h2
-          class="card p-3 heading-text light-purple-bg brown-border-thin text-center"
+          class="card p-3 light-purple-heading-bg brown-border-light text-center"
         >
           Contact Me!
         </h2>
@@ -56,7 +56,7 @@
             id="message"
             name="Message"
             class="form-control light-purple-bg"
-            rows="10"
+            rows="7"
             placeholder="Leave me a message!"
           ></textarea>
         </div>
@@ -97,13 +97,17 @@ form p {
   border-radius: 11px;
 }
 
-.brown-border-thin {
+.brown-border-light {
   border: 2px solid #492f10;
   color: #492f10;
 }
 
+.light-purple-heading-bg {
+  background-color: #e6c4c0;
+}
+
 .light-purple-bg {
-  background-color: #CA8A8B;
+  background-color: #e6c4c0;
   border: 1px solid #492f10;
 }
 

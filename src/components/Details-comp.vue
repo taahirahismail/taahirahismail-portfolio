@@ -1,12 +1,12 @@
 <template>
-<button class="btn brown-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Click Me!</button>
+<button class="btn brown-details-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Click Me!</button>
 
-<div class="offcanvas offcanvas-start purple-bg brown-text" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="details-offcanvas">
+<div class="offcanvas offcanvas-start widen purple-bg brown-text" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="details-offcanvas">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title card m-2 p-2 w-100 text-center light-purple-bg brown-border" id="details-offcanvas">My Details</h5>
+    <h4 class="offcanvas-title card m-2 p-2 w-100 text-center light-purple-bg brown-border" id="details-offcanvas">My Details</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body card m-1 light-purple-bg brown-border">
+  <div class="offcanvas-body card m-3 light-purple-bg brown-border">
     <div class="p-5">
               <img
                 src="https://i.postimg.cc/FKSMcmPK/C12-Taahirah-Ismail-crop.jpg"
@@ -17,12 +17,14 @@
             </div>
 
             <div class="text-center pb-3 brown-text">
-              <h4><strong>Taahirah Ismail</strong></h4>
-              <em>Web Developer</em> <br />
-              <br />
-              09/04/1999 <br />
-              Cape Town <br />
-              <br />
+              <h3><strong>Taahirah Ismail</strong></h3>
+              <h4>
+                <em>Web Developer</em> <br />
+                <br />
+                09/04/1999 <br />
+                Cape Town <br />
+                <br />
+              </h4>
 
               <div class="pt-3">
                 <a
@@ -71,6 +73,10 @@ export default {
 </script>
 
 <style>
+.widen {
+  width: 35% !important;
+}
+
 .pfp {
     width: 100%; 
     border: 3px solid #492F10;
@@ -101,5 +107,14 @@ export default {
 .brown-text {
     color: #492F10;
 }
-    
+
+.brown-details-btn {
+  border: 2px solid #492F10;
+  color: #492F10;
+}
+ 
+.brown-details-btn:hover {
+  background-color: #492F10;
+  color: #e6c4c0;
+}
 </style>

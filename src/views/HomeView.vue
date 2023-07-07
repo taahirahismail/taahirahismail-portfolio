@@ -4,11 +4,11 @@
             <div class="container-md p-2 text-center d-flex justify-content-center align-items-center">
               <div class="card w-100 p-5 purple-bg brown-border-thin">
                 <div class="p-5">
-                  <div class="typewriter">
+                  <div class="typewriter add-padding">
                     <h2>Hi there! I'm Taahirah and this is my portfolio!</h2>                  
                   </div>
                   
-                  <div class="p-5 animate__animated animate__fadeIn animate__delay-3s">
+                  <div class="p-5 animate__animated animate__fadeIn animate__delay-3s add-padding">
                     <h6 class="d-flex justify-content-center align-items-center text-center brown-text">I plan to be an amazing fullstack developer someday. Click below so you can say you found me first :)</h6>
                   </div>
 
@@ -94,5 +94,26 @@ export default {
     0% { border-color: transparent }
     50% { border-color: #492F10 }
     100% { border-color: transparent}
+  }
+
+  @media screen and (max-width: 1400px) {
+    .typewriter h2 {
+        display: flex;
+        flex-wrap: wrap;
+        white-space: normal;        
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #main .p-5 {
+        padding: 4px !important;
+        margin: 0 !important;
+        margin-top: 12px !important;
+        min-height: 30vh;
+    }
+
+    .add-padding {
+      padding-top: 10rem;
+    }
   }
 </style>

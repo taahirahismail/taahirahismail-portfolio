@@ -17,7 +17,7 @@
         :key="project.id"
         :project="project"
         id="projects-card"
-        class="card m-2 col-5 dark-purple-bg brown-border"
+        class="card m-2 dark-purple-bg brown-border fix-width"
       >
         <iframe
           :src="project.netlify"
@@ -106,5 +106,15 @@ export default {
   transform: translate3D(0, -1px, 0) scale(1.03);
   box-shadow: 8px 28px 50px #492f10, 1px 6px 12px #492f10;
   transition: all 0.4s ease;
+}
+
+.fix-width {
+  width: 48%;
+}
+
+@media screen and (max-width: 900px) {
+  .fix-width {
+    width: 100%;
+  }
 }
 </style>
